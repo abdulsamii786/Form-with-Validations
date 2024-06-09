@@ -1,0 +1,92 @@
+@font-face {
+  font-family: QueensidesLight;
+  src: url(./assets/fonts/QueensidesLight-ZVj3l.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: QueensidesLight;
+  font-weight: bolder;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  width: 600px;
+  border-top-left-radius: 80px;
+}
+label {
+  font-size: 18px;
+  margin: 5px 0px;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.144);
+  transition: 300ms ease-in-out;
+  margin: 5px 0px;
+  font-size: 16px;
+  margin: 5px 0px;
+  width: 100%;
+
+}
+
+input:focus {
+  background-color: white;
+  transform: scale(1.01);
+  box-shadow: 2px 2px 1px #b8b5b5;
+}
+
+.button {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 15px;
+  background-color: #2ba8fb;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  margin: 10px 0px;
+}
+
+.button:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.01);
+}
+
+.button:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+input::placeholder {
+  color: #bdbbbb;
+}
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.input-wrapper span {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
